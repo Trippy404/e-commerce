@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero {
+  text-align: center;
+  background: #635d5d;
+  padding: 10px 0;
+}
+.gen {
+  color: #fff;
+  font-size: 6rem;
+  margin-bottom: 10px;
+}
+
+.mus {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 20px 30px;
+}
+
+.music-sec {
+  /* display: flex; */
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.first-card {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  gap: 230px;
+  /* transform: translate(-50%, -50%);
+  position: relative;
+  top: 200px;
+  left: 590px;
+   */
+}
+
+.titel {
+  margin: 20px;
+  padding: 25px;
+  text-align: center;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cont-img {
+  max-width: 250px;
+  border-radius: 10px;
+}
+/* .cont-img:hover {
+ 
+} */
+
+.img-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.price {
+  font-size: 20px;
+}
+
+.card-btn {
+  background-color: #56ccf2;
+  color: #fff;
+  padding: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.second-card {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  gap: 230px;
+}
+
+.season {
+  text-align: center;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+.cont-img-tshirt {
+  max-width: 250px;
+}
+.cont-img-cofee {
+  max-width: 280px;
+}
+.footer-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+.btn-footer {
+    padding: 14px;
+    font-size: 15px;
+    background-color: #777;
+    color: #56CCF2;
+    font-weight: 700;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+
+}
+
+.utube{
+  max-width: 35px;
+
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  background-color:  #56CCF2;
+  margin: 30px 0 0 0;
+  width: 100%;
+
+}
+
+.inside-footer{
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  align-items: center;
+  height: 100px;
+}
+.footer-header{
+  color: #fff;
+  font-size: 50px;
+}
+.footer-list{
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 768px){
+  .gen{
+    font-size: 90px
+  }
+  .hero {
+     padding-bottom:50px ;
+  }
+  .first-card{
+    display: block;
+    text-align: center;
+  }
+  .second-card{
+    display: block;
+    text-align: center;
+  }
+  .img-footer{
+    display: flex;
+    justify-content: space-evenly;
+  }
+   .mus{
+    text-align: center;
+   }
+   .footer{
+    max-width: 100%;
+   }
+   .footer-header{
+    font-size: 30px;
+   }
+   .footer-list{
+    gap: 30px;
+   }
+}
