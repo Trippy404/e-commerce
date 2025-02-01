@@ -1,0 +1,281 @@
+/* src/LandingPage.css */
+.landing-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    padding-top: 70px; /* Add padding to avoid overlap with the fixed navbar */
+  }
+  
+  /* Hero Section */
+  .hero1 {
+    background: linear-gradient(135deg, #f8f8f81a, #104ebb);
+    height: calc(100vh - 70px); /* Adjust height to account for navbar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1; /* Ensure hero section is below the navbar */
+  }
+  
+  .hero1 h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: slideIn 1.5s ease-out;
+  }
+  
+  .hero1 p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: slideIn 2s ease-out;
+  }
+  
+  .cta-button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 2.5s ease-in;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4);
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #e64a19;
+    transform: scale(1.1);
+  }
+  
+  /* Floating Icons */
+  .floating-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1; /* Ensure icons are behind the hero content */
+  }
+  
+  .icon {
+    position: absolute;
+    font-size: 2rem;
+    animation: float 6s infinite ease-in-out;
+  }
+  
+  .icon:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    animation-duration: 8s;
+  }
+  
+  .icon:nth-child(2) {
+    top: 0%;
+    left: 80%;
+    animation-duration: 10s;
+  }
+  
+  .icon:nth-child(3) {
+    top: 70%;
+    left: 20%;
+    animation-duration: 12s;
+  }
+  
+  .icon:nth-child(4) {
+    top: -20%;
+    left: 40%;
+    animation-duration: 12s;
+  }
+  
+  /* Hero Content */
+  .hero-content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in;
+    z-index: 2; /* Ensure content is above icons */
+    position: relative; /* Required for z-index to work */
+  }
+  
+  /* Footer Section */
+  .footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    z-index: 3; /* Ensure footer is above other elements */
+  }
+
+
+
+
+  .loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #09f;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading-spinner p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(10deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+  }
+
+
+
+  /* Aboute page style */
+
+
+ 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f3f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .about-title {
+    font-size: 42px;
+    color: #3e3e3e;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .about-description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    font-weight: 300;
+  }
+  
+  /* Team Section */
+  .about-team h2 {
+    font-size: 28px;
+    color: #3e3e3e;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+  .team-list li{
+    list-style: none;
+    
+  }
+  .team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .team-card {
+    background-color: #f5f6fa;
+    padding: 25px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .team-card h3 {
+    font-size: 22px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .team-card p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  /* Animation for fade-in */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
